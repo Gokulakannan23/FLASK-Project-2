@@ -1,0 +1,8 @@
+#import flask
+from flask import Flask
+app=Flask(__name__)
+@app.route('/')
+def hello_world():
+    return "<h1>Rolls-Royce</h1><p>Rolls-Royce Motor Cars Limited is a British luxury automobile maker that has operated as a wholly owned subsidiary of BMW AG since 2003 – as the exclusive manufacturer of Rolls-Royce-branded motor cars. The company's administrative and production headquarters are located on the 42-acre (17 ha) Goodwood Estate in Goodwood, West Sussex, England, United Kingdom.<br>The Rolls-Royce car epitomizes luxury and craftsmanship, representing the pinnacle of automotive engineering and design. Each vehicle is meticulously handcrafted, ensuring unparalleled attention to detail and bespoke customization options that cater to the discerning tastes of its owners. The iconic Spirit of Ecstasy hood ornament, coupled with the classic yet modern aesthetic, makes a Rolls-Royce instantly recognizable and timeless. Beyond its visual appeal, the performance of a Rolls-Royce is equally impressive, offering a smooth and powerful ride thanks to its advanced engineering and high-performance engines. Inside, the cabin is a sanctuary of opulence, featuring the finest materials, from hand-stitched leather seats to exquisite wood veneers, providing an environment of ultimate comfort and sophistication. Owning a Rolls-Royce is not just about driving a car; it's about experiencing an artful blend of tradition, innovation, and luxury that sets a standard few can match.</p>"
+if __name__=='__main__':
+    app.run(debug=True)
